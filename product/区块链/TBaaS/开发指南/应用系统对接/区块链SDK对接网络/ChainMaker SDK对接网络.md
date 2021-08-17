@@ -12,7 +12,7 @@
   - **config**：目录，存放 SDK 配置文件，后续证书也可放置在该目录下。
     - **config.yml**：SDK 配置文件。
   - **main.go**：文件，为 SDK 调用合约示例代码。
-  - **rust-fact-1.0.0.wasm**：文件，存证合约示例代码编译后字节码，可在 TBaaS 控制台上传该文件部署合约。
+  - **go-fact-1.2.0.wasm**：文件，存证合约示例代码编译后字节码,可根据[智能合约开发(Go)](https://cloud.tencent.com/document/product/663/60112)开发指南编译得到，通过TBaaS 控制台上传该文件可部署该合约。
 - **chainmaker-sdk-go**：目录，存放长安链 Go 版本 SDK 源代码。
 
 
@@ -79,10 +79,10 @@ chain_client:
 ### 部署合约
 
 1. 单击【合约管理】页签，进入“合约管理”页面
-2. 使用压缩包内的 `rust-fact-1.0.0.wasm` 上传，并且进行如下配置：
+2. 使用压缩包内的 `go-fact-1.2.0.wasm` 上传，并且进行如下配置：
 	- **合约名称**：填写 `fact`。
 	- **版本号**：填写：`v1.0`。
-	- **执行环境**：选择 `Rust`。
+	- **执行环境**：选择 `Go`。
 	- **初始化参数（选填）**：保存为空。
 <img src="https://main.qcloudimg.com/raw/a9e16a6d16edd1e3d252673356597c1a.png" style="zoom: 60%;" />
 3. 部署成功后，合约列表将会展示刚刚部署的合约。如下图所示：
@@ -164,4 +164,4 @@ go run main.go config/config.yml
 
 ## 更多对接方式
 
-长安链提供了多种语言的SDK，包括 Go SDK、Java SDK，方便开发者根据需求进行选用。更多详情请参见 [长安链 SDK 开发指南](https://docs.chainmaker.org.cn/dev/SDK.html)。
+长安链提供了多种语言的SDK，包括 Go SDK、Java SDK等，方便开发者根据需求进行选用。更多详情请参见 [长安链 SDK 开发指南](https://docs.chainmaker.org.cn/dev/SDK.html)。
